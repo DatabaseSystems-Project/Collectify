@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.admin-container{
+  width:auto;
+  height: 100vh;
+  display: flex;
+}
+
+.admin-navbar{
+  width: 18%;
+}
+
+.admin-viewavatars-div{
+  width: 90%;
+  background-color: #355969;
+}
+
+.admin-viewavatars-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.avatarlist{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.avatarlist > div {
+  margin: 5px; /* Adjust the margin as needed */
+  position: relative;
+}
+
+.avatarlist_title {
+  width: 70%;
+  border-bottom: 2px solid #000;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.avatarlist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.avatar_delete_button{
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f03a47;
+  cursor: pointer;
+  color: #ddd;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+.avatar_delete_button:hover{
+  background-color: #f1646e;
+}
+
+.avatarlist li {
+  margin-bottom: 10px;
+}
+
+.avatarlist img {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border-radius: 100%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.admin-addAvatar{
+  width: 70%;
+}
+
+.admin-addAvatar h2 {
+  margin-top: 80px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #000;
+}
+
+.admin-addAvatar input[type="file"] {
+  margin-top: 10px;
+}
+
+.admin-addAvatar button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4B49AC;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.admin-addAvatar button:hover {
+  background-color: #7271b5;
+}

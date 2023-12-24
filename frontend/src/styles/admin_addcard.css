@@ -1,0 +1,163 @@
+/* form.css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.admin-container{
+    width:auto;
+    height: 100vh;
+    display: flex;
+}
+
+.admin-navbar{
+    width: 18%;
+}
+
+.scrollable-card-container{
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
+}
+
+.admin-addcard-div{
+  background-color: #355969;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_container {
+  display: flex;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 16px;
+  width: 60%;
+
+  background: rgba( 255, 255, 255, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6px );
+  -webkit-backdrop-filter: blur( 6px );
+  border-radius: 10px;
+}
+
+  .update-form-container {  /*  ??????? */
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 16px;
+  }
+
+ 
+
+  .form {
+    width: 60%;
+    position: relative;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-coll-select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .admin-addcard-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4B49AC;
+    color: #fff;
+    border: 1px solid #4B49AC;
+  }
+  
+  .admin-addcard-button:hover {
+    background-color: #6c6ba4;
+    border-color: #6c6ba4;
+  }
+
+  .close-button-div{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555; /* Adjust the color as needed */
+  }
+  
+  
+  .close-button:hover {
+    color: #462e2e; /* Change color on hover if desired */
+  }
+  .show-prewiewUrl{
+    display: flex;
+    margin-top: 32px;
+    margin-left: 20px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .card_show{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+.update-show-prewiewUrl{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.quantity-input{
+  display: flex;
+}
+
+
+.quantity-input button{
+  width: 25px;
+  height: 30px;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #aa303a;
+  cursor: pointer;
+  color: #ddd;
+}
+
+.quantity-input button:hover{
+  background-color: #c4565f;
+}

@@ -1,0 +1,63 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+nav{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    height: 90vh;
+  }
+  .admin_navbar{
+    background-color: #002c3e;
+  }
+  
+.collectify_header{
+    color:#f4a261;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 2px solid #f4a261;
+}
+
+  ul {
+    margin-top: 60px;
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  li{
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 25px;
+  }
+
+  .admin_navbar_links{
+    margin-left: 10px;
+    width: 100%;
+    color : #f4a261;
+    font-size: 16px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #e67f2b; /* Change color on hover */
+  }
+  
+  .admin_navbar_links.active {
+    color: #c46415; /* Change color for the active link */
+  }
+
+ 

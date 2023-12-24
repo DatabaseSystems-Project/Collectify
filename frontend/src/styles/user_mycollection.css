@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.user_container{
+  width:auto;
+  height: 100vh;
+  display: flex;
+}
+
+.user_navbar{
+  width: 18%;
+}
+
+.user_mycollection_div{
+  background-color: #7093aa;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto; /* Enable vertical scrolling if the content overflows */
+}
+
+
+.user_search_button_div{
+margin-top: 20px;
+
+}
+
+.mycollections_search_button {
+padding: 10px 20px; 
+border-radius: 8px; 
+}
+
+.icon{
+height: 21px;
+margin-left: 10px;
+}
+
+.mycollections_search_button {
+  padding: 10px 20px; 
+  border-radius: 8px; 
+}
+
+.icon{
+  height: 21px;
+  margin-left: 10px;
+}
+
+/* Set the placeholder text to "Search Cards" */
+.user_search_button_div input::placeholder {
+content: "Search Cards";
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Adjust the alpha (0.5 for 50% transparency) */
+
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+.user_card {
+  width: 250px;
+  position: relative;
+  margin: 10px;
+  border: 1px solid #ccc;
+  transition: transform 0.3s;
+  padding: 10px;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
+}
+
+.user_card_common {
+background: linear-gradient(to right, #8B4513, 	#D2691E); /* Blue gradient for common */
+}
+
+.user_card_rare {
+background: linear-gradient(to top right, yellow, #ff0080); /* Gold gradient for rare */
+}
+
+.user_card_uncommon {
+background: linear-gradient(to right, silver, gray); /* Blue gradient for common */
+}
+
+.user_card_legendary {
+  background: linear-gradient(130deg, #ff00ff, #00ffff, #ff00ff);}
+
+.rendered_cards_container{
+display: flex;
+flex-direction: column;
+padding: 30px;
+margin-right: 40px;
+}
+
+.rendered_card_container{
+width: 1000px; /* Adjust the width as needed */
+display: flex;
+flex-wrap: wrap; /* Allow items to wrap to the next row */
+gap: 40px;
+}
+
+
+.user_card_title{
+  margin-bottom: 10px;
+}
+
+.user_card_content_collection:hover .user_card {
+  transform: scale(1.05);
+}
+
+.user_card_content_collection:hover .user_card_details {
+  z-index: 1;
+  opacity: 1;
+}
+
+
+.user_card_content_collection {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.user_card_price{
+  width: 70%;
+}
+
+.user_card_img {
+  width: 100%;
+  height: auto;
+}
+
+.user_card_details {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(37, 37, 37, 0.8); /* Semi-transparent background for better readability */
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s;
+  z-index: -1;
+}
+
+.user_card_details h2,
+.user_card_details h3,
+.user_card_details p {
+  margin: 0;
+}
+
+
+.user_card_body {
+  padding: 10px;
+}
+
+.user_card_body h4{
+  border-bottom: 2px solid black;
+}
+
+.user_card_description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.user_card_rarity {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1500px) {
+  
+  .user_card {
+    width: 190px;
+    position: relative;
+    margin: 10px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s;
+    padding: 10px;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+.user_card_common {
+  background: linear-gradient(to right, #8B4513, 	#D2691E); /* Blue gradient for common */
+}
+
+.user_card_rare {
+  background: linear-gradient(to top right, yellow, #ff0080); /* Gold gradient for rare */
+}
+
+.user_card_uncommon {
+  background: linear-gradient(to right, silver, gray); /* Blue gradient for common */
+}
+
+.user_card_legendary {
+  background: linear-gradient(to top left, darkBlue, turquoise); /* Gold gradient for rare */
+}
+  
+.rendered_cards_container{
+  display: flex;
+  flex-direction: column;
+}
+
+.rendered_card_container{
+  width: 600px; /* Adjust the width as needed */
+
+  width: 1250px; /* Adjust the width as needed */
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  gap: 10px;
+}
+}
+
+
+
+.user_card_title{
+    margin-bottom: 10px;
+}
+
+.user_card_content_collection:hover .user_card {
+    transform: scale(1.05);
+}
+  
+.user_card_content_collection:hover .user_card_details {
+    z-index: 1;
+    opacity: 1;
+}
+
+
+.user_card_content_collection {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+  
+.user_card_price{
+    width: 70%;
+}
+
+.user_card_img {
+    width: 100%;
+    height: auto;
+}
+  
+.user_card_details {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(37, 37, 37, 0.8); /* Semi-transparent background for better readability */
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s;
+    z-index: -1;
+}
+ 
+.user_card_details h2,
+.user_card_details h3,
+.user_card_details p {
+    margin: 0;
+}
+  
+
+.user_card_body {
+    padding: 10px;
+}
+
+.user_card_body h4{
+    border-bottom: 2px solid black;
+}
+  
+.user_card_description {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.user_card_rarity {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1500px) {
+  
+  .rendered_cards_container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .rendered_card_container{
+    width: 600px; /* Adjust the width as needed */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    gap: 10px;
+  }
+}

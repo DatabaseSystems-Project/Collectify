@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.admin-container{
+    width:auto;
+    height: 100vh;
+    display: flex;
+  }
+  /* width */
+  .admin_home::-webkit-scrollbar {
+  width: 20px;
+  }
+
+  /* Track */
+  .admin_home::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+  }
+
+  /* Handle */
+  .admin_home::-webkit-scrollbar-thumb {
+  background: #355969;
+  border-radius: 10px;
+  }
+
+.mycollections_search_button{
+  margin-top: 8px;
+  height: 40px;
+  margin-left: 70px;
+}
+
+  .admin-navbar {
+    width: 18%;
+    z-index: 10;
+  }
+  
+  .wrapper_admin {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: #355969;
+   
+  }
+
+  .scrollable-cards-container-admin {
+    margin: 2rem auto;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: center;
+    height: 800px; 
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+
+  /* Add these styles to your existing CSS */
+
+/* Styling for bulk actions */
+.header_buttons{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+.bulk-actions {
+  margin-bottom: 20px;
+}
+
+/* Adjust the styling for the "Select All" checkbox */
+#selectAll {
+  margin-right: 10px; /* Adjust the margin as needed */
+  cursor: pointer;
+}
+
+#selectAll + label {
+  position: relative;
+  padding-left: 25px; /* Adjust the padding as needed */
+  cursor: pointer;
+}
+
+#selectAll + label:before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 5px;
+  width: 15px; /* Adjust the size as needed */
+  height: 15px; /* Adjust the size as needed */
+  border: 1px solid #4B49AC; /* You can choose a color for the border */
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+#selectAll:checked + label:before {
+  content: '\2714'; /* Checkmark Unicode character */
+  font-size: 11px; /* Adjust the size as needed */
+  color: #4B49AC; /* You can choose a color for the checkmark */
+}
+
+/* Styling for Delete Selected button */
+button {
+  margin-top: 10px;
+  margin-left: 15px;
+  padding: 8px 16px; /* Adjust the padding as needed */
+  background-color: #f4a261; /* You can choose a color for the background */
+  color: #000; /* You can choose a color for the text */
+  border: none;
+  border-radius: 4px; /* You can adjust the border radius */
+  cursor: pointer;
+}
+.updateSelected_button{
+  background-color: #1f7e2e;
+}
+.delete_before{
+  background-color: #f4a261;
+}
+
+.update_button{
+  background-color: #f4a261;
+}
+
+.allCards_button{
+  background-color: #f4a261;
+}
+
+.search-btn{
+  background-color: #f4a261;
+}
+
+button:hover {
+  background-color: #e67f2b; /* You can choose a color for the background on hover */
+}
+
+  
+input[type="checkbox"] {
+  position: absolute;
+  top: 10px; /* Adjust the position as needed */
+  left: 10px; /* Adjust the position as needed */
+  cursor: pointer;
+}
+
+
+.admin_Cards_home {
+    width: 350px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    background-color: #e6e9ec;
+    z-index: 3;
+  }
+
+  /* Styling for selected cards */
+.admin_Cards_home.selected {
+  border: 2px solid #4B49AC; /* You can choose a color for the border */
+  /*box-shadow: 0 0 4px #4B49AC; /* You can adjust the shadow */
+}
+  
+.admin_Cards_home:hover {
+  transform: scale(1.02);
+}
+
+.card__content {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+} 
+
+.card__content_left img{
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card__content_left{
+  width: 100%;
+  margin-right: 5px;
+}
+
+
+.card__content_right {
+  flex-grow: 1;
+  padding: 5px;
+  text-align: left;
+  width: 350px;
+  height: 200px;
+}
+
+.card__title {
+  margin-top: 10px;
+  line-height: 20px;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  color: #355969;
+}
+  .card__body {
+    overflow-y: auto; /* Enable vertical scrollbar when the content overflows */
+    position: absolute;
+    top: 0; /* Set the top to 100% to cover the entire card */
+    left: 0;
+    text-align: left;
+    opacity: 0;
+    padding: 20px;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .card__description{
+    overflow: auto;
+    max-height: 160px;
+  }
+  .card__date{
+    margin-top: 5px;
+    font-size: 15px;
+  }
+
+  .admin_Cards_home:hover .card__content {
+    opacity: 0;
+  }
+  
+  .admin_Cards_home:hover .card__body {
+    opacity: 1;
+  }
+
+
+
+
+  /* ------------------- UPDATE FORM -------------------  */
+  .update-form{
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 70%;
+    justify-content: space-around;
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+  }
+
+  .update-left-part{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+  }
+
+  .update-form-fields{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .update_card_title{
+    margin-bottom: 30px;
+  }
+
+  .update_card_image{
+    margin-bottom: 30px;
+    width: 200px;
+    height: 200px;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .update_card_description{
+    margin-top: 15px;
+    overflow: auto;
+    max-height: 150px;
+  }
+
+
+  .update_form_h2{
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+  }
+
+
+  
+  

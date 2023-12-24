@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.body{
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    display: flex;
+    background-color: #fff; /* Set the background color of the right part to white */
+    justify-content:space-around;
+    height: 100vh;
+    width: auto;
+}
+
+.leftpart{
+    background-size: cover;
+    background-image: url('../images/card10.jpeg');
+    flex: 1;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+.leftpart::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity (last parameter) as needed */
+    backdrop-filter: blur(1.5px); /* Adjust the blur radius as needed */
+}
+.leftpart::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 110%; /* Adjust the height of the color filter as needed */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+}
+
+.writings {
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the square */
+    width: 70%; /* Adjust the width as needed */
+    margin: 70px auto; /* Adjust the margin for positioning */
+    position: relative;
+    background: transparent; /* Set the background to transparent */
+    z-index: 2;
+}
+.writings h1{
+    font-family: 'Cherry Swash', serif;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 100px; 
+    /*font-family: Arial, sans-serif;*/
+    position: relative;
+    font-size: 40px;
+    color: #fff; /* Set text color to white */
+    padding: 20px;
+    letter-spacing: 0.05em; /* Adjust letter spacing as needed */
+    word-spacing: 0.9px;
+}
+
+.writings h3{
+    /*font-family: Arial, sans-serif;*/
+    font-family: 'Scope One', serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    word-spacing: 0.9px;
+    position: relative;
+    color: #fff; /* Set text color to white */
+    padding: 20px;
+    letter-spacing: 0.05em; /* Adjust letter spacing as needed */
+}
+
+
+/*------------------------------------ RIGHT PART ------------------------------------*/
+.rightpart{
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background: #cbd7da;
+    padding: 20px;
+}
+.logo-container {
+    background-image: url('../images/logo.png');
+    background-size: contain; /* Adjust as needed: cover, contain, etc. */
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0;
+    flex: 1;
+    position: relative;
+    width: 70%; /* Use 100% width to cover the container */
+    max-width: 150px; /* Set the maximum width of the logo */
+    height: 70px; /* Set the desired height */
+    max-height: 150px; /* Set the maximum height of the logo */
+}
+
+
+form {
+    max-height: 600px;
+    max-width: 400px; /* Adjust the maximum width of the form */
+    margin: 0 auto; /* Center the form within the right part */
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.text{
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.underline{
+    width: 55px;
+    height: 2px;
+    background:#000;;
+}
+
+.inputs{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 400px;
+    height: 50px;
+    background: #eaeaea;
+}
+
+.icon{
+    margin: 0px 20px;
+}
+
+.input input{
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 17px;
+}
+
+.forgot-password{
+    padding-left: 55px;
+    margin-top: 15px;
+    color: #797979;
+    font-size: 14px;
+}
+
+.forgot-password span{
+    color: #000;
+    cursor: pointer;
+}
+
+.tohome{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    
+}
+
+.responseData{
+    font-size: 15px;
+    margin-left: 50px;
+    color: red;
+}
+
+.submit-container{
+    width: 300px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.submit-container .submit_button{
+    margin-bottom: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 48px;
+    color: #fff;
+    background: #000;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-link{
+    font-size: 13px;
+}
+
+.login-link span{
+    text-decoration: underline;
+}
+
+.gray{
+    background: #EAEAEA;
+    color: #676767;
+}
+
+
+
+/*------------------------------------------------------------------------*/
+.submit-container .submit_button:hover{
+    margin-bottom: 10px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 48px;
+    color: #fff;
+    background: #4a4949;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}

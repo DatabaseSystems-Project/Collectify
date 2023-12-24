@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.user_container{
+    width:auto;
+    height: 100vh;
+    display: flex;
+}
+
+.user_navbar{
+    width: 18%;
+}
+
+.user_auction_div{
+    background-color: #7093aa;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.cardd{
+  padding: 10px;
+  width: 200px;
+}
+
+.cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .btn .cancel_auction{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 100%;
+  }
+  
+  .card {
+    height: 490px;
+    width: 250px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #efefef;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+  }
+  
+
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .close-button {
+    background-color: #333;
+    color: rgb(59, 131, 175);
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .start-auction-button {
+    z-index: 1;
+    background-color: #d1aa73;
+    color: #faeec4;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .start-auction-button:hover{
+    background-color: #325d55;
+  }
+
+  .auctionButton{
+    height: 40px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+/* Add your desired styles here */
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  max-height: 600px;
+}
+
+.bid_progressbar{
+
+  margin-top: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bid_progressbar div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.bid_amount{
+  font-size: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.cancel_button{
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+}
+
+.bid_button{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+}
+
+.card-body{
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_auction_body{
+ 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.card_auction_body div{
+  width: 100%;
+}
+
+.card_auction_time{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for the card list window */
+.card-list-window {
+  z-index: 15;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 50px;
+  margin-left: 320px;
+  max-height: 800px; /* Set the maximum height for scrolling */
+  overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 800px;
+}
+
+
+ @media (max-width: 1500px) {
+  
+  .card-list-window {
+    z-index: 15;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 50px;
+    margin-left: 280px;
+    overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+    border: none;
+    display: flex;
+    max-width: 1200px;
+  }
+} 
+.cardd:hover {
+  transform: scale(1.02);
+}
+
+.display-5{
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.display-6{
+  text-align: center;
+  font-weight: 700;
+  border-bottom: 2px solid black;
+  font-size: 16px;
+}
+
+.card_auction_title{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.card_auction_collection{
+  border-radius: 2px;
+  text-align: center;
+  font-size: 13px;
+  margin-top: -5px;
+}
+
+.auction__container{
+  padding: 20px;
+  margin-left: 30px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  margin-left: 50px;
+  gap: 50px;
+}
+.card_content{
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  background-color: #fff;
+}
+
+.card__img {
+  border-radius: 5px;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+/* Add styles for text inside the card */
+.auctionUI_title {
+  font-size: 15px;
+  color: #000;
+}
+
+.auctionUI_collectionName{
+  font-size: 12px;
+  margin: 5px 0; /* Adjust margin for better spacing */
+}
+
+.auctionUI_pr{
+  font-size: 12px;
+  background-color: transparent;
+}
+
+.card_details{
+  font-size: 13px;
+  background-color: transparent;
+}
+
+.card_details_pr{
+  display: flex;
+  justify-content: space-around;
+}
+
+.auctionTitle{
+  margin-left: 25px;
+}
+
+
+.scrollable-cards-container{
+  display: flex;
+  
+  width: 90%;
+  gap: 20px;
+  padding: 20px; /* Optional: Add padding for better visual appearance */ 
+}
+
+.selectedCard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 40px;
+  margin: 20px;
+}
+
+.selectedCard_img{
+  max-width: 100%;
+  min-width: 100%; /* Adjust the minimum width as needed */
+  border-radius: 5px
+}
+
+.selectedCard_left{
+  width: 40%;
+  margin-right: 30px;
+}
+
+.selectedCard_right {
+  width: 60%;
+  margin-left: 10px;
+}
+
+.selectedCard_right strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.selectedCard_Duration {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.selectedCard_title {
+  margin-top: 10px; /* Adjust as needed for space between rows */
+}
+
+.selectedCard_auction {
+  margin-top: 30px; /* Adjust as needed for space between rows */
+}
+
+.selectedCard_counter {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px; /* Adjust as needed for space between rows */
+}
+
+.selectedCard_startprice{
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Adjust as needed for space between rows */
+}
+
+.selectedCard_startprice input{
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Adjust the border-radius to make the input more circular */
+  padding: 8px; /* Add padding for spacing inside the input */
+  margin-top: 8px; /* Adjust the margin as needed */
+  width: 80px; /* Adjust the width of the inputs */
+}
+
+.selectedCard_counter input {
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px; /* Adjust the border-radius to make the input more circular */
+  padding: 8px; /* Add padding for spacing inside the input */
+  margin-top: 8px; /* Adjust the margin as needed */
+  width: 80px; /* Adjust the width of the inputs */
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c59b3f;
+  border-radius: 10px;
+}
+

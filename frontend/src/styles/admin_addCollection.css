@@ -1,0 +1,163 @@
+/* form.css */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.admin-container{
+    width:auto;
+    height: 100vh;
+    display: flex;
+}
+
+.admin-navbar{
+    width: 18%;
+}
+
+.admin-collectionpage-div{
+  background-color: #355969;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collection-names-container{
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-height: 400px;
+  margin-bottom: 20px;
+}
+
+.collection-names-container h2{
+  margin-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+.collection-names-container ul{
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.collection-names-container ul li{
+  margin-bottom: 5px;
+}
+
+
+
+.form_container_collection {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+  }
+
+  .update-form-container {
+    display: flex;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 16px;
+  }
+
+  .form {
+    position: relative;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-coll-select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border: 1px solid #4caf50;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+  }
+
+  .close-button-div{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555; /* Adjust the color as needed */
+  }
+  
+  
+  .close-button:hover {
+    color: #000; /* Change color on hover if desired */
+  }
+  .show-prewiewUrl{
+    display: flex;
+    width: 'auto';
+    height: 'auto';
+  }
+
+  /* Additional styles for show-previewUrl */
+.show-previewUrl img {
+  max-width: 100%;
+  height: auto;
+}
+
+.update-show-prewiewUrl{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}

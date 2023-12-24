@@ -1,0 +1,113 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+nav {
+    padding: 0px;
+    background-color: #164863;
+    height: 100vh;
+    width: 100%;
+  }
+  
+nav h1{
+    font-family: 'Ysabeau', sans-serif;
+    color:#c47d15;;
+    text-align: center;
+    font-size: 30px;
+    /*border-bottom: 2px solid #2a3e41;*/
+}
+
+.user_navbar_h1{
+  border-radius: 0px;
+  border-bottom: 2px solid #c47d15;
+}
+
+  ul {
+    height: 70vh;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  li{
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 25px;
+  }
+
+  .user_navbar_info{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ .money_icon{
+  font-weight: 700;
+  font-size: 16px;
+  margin-right: 7px;
+ }
+
+  .user_navbar_info_avatar{
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+  }
+
+  .user_navbar_info_avatar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .user_navbar_info_items{
+    
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 15px;
+    color: #fdf0d3;
+  }
+
+  .navbar-links{
+    margin-left: 15px;
+    font-family: 'Ysabeau', sans-serif;
+    width: 100%;
+    color : #c59b3f;
+    font-size: 20px;
+  }
+
+  .navbar-links:hover{
+    margin-left: 15px;
+    font-family: 'Ysabeau', sans-serif;
+    width: 100%;
+    color : #fdf0d3;
+    font-size: 23px;
+  }
+
+  .navbar-links.active {
+    font-size: 23px;
+    color: #c47d15; /* Change color for the active link */
+  }
+
+@media (max-width: 1500px) {
+  .user_navbar_info{
+    flex-direction: column;
+  }
+
+  .navbar-info-item{
+    margin-top: 15px;
+    height: 5px;
+    display: flex;
+    align-self: flex-start;
+    flex-wrap: wrap;
+  }
+}
